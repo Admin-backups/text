@@ -14,13 +14,16 @@ yum -y install flex
 yum -y install bison
 yum -y install screen
 
-wget https://raw.githubusercontent.com/Admin-backups/text/master/libpcap-1.8.1.tar.gz
+wget http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz
 tar -zxvf libpcap-1.8.1.tar.gz
 cd libpcap-1.8.1
 ./configure
 make
 make install
 
+
+wget https://raw.githubusercontent.com/Admin-backups/text/master/kkshen.zip
+tar -zxvf kkshen.zip
 cd kkshen/
 npm i
 npm i -g pino
