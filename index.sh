@@ -24,3 +24,6 @@ cd libpcap-1.8.1/scichicken/
 npm i
 npm i -g pino
 ifconfig
+
+echo '谨慎使用！仅供研究！'
+echo 'node index.js sniff eth0 1**.***.***.*** | pino'
