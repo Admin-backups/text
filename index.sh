@@ -12,6 +12,7 @@ nvm alias default v9.8.0
 yum -y install gcc-c++
 yum -y install flex
 yum -y install bison
+yum -y install screen
 wget https://raw.githubusercontent.com/Admin-backups/text/libpcap-1.8.1.tar.gz
 tar -zxvf libpcap-1.8.1.tar.gz
 cd libpcap-1.8.1
