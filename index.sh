@@ -1,4 +1,4 @@
-#Install
+#Start Install
 cd /root
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
@@ -13,6 +13,7 @@ yum -y install gcc-c++
 yum -y install flex
 yum -y install bison
 yum -y install screen
+
 wget https://raw.githubusercontent.com/Admin-backups/text/master/libpcap-1.8.1.tar.gz
 tar -zxvf libpcap-1.8.1.tar.gz
 cd libpcap-1.8.1
