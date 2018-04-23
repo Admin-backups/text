@@ -21,7 +21,7 @@ cd libpcap-1.8.1
 make
 make install
 
-cd libpcap-1.8.1/kkshen/
+cd kkshen/
 npm i
 npm i -g pino
 ifconfig
