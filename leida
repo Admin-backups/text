@@ -20,10 +20,10 @@ done
 
 if [[ $choice == 1 ]];then
 	cd /root
-  	rm -rf index.sh
-  	wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/index.sh
-  	chmod +x index.sh
-  	sh index.sh
+  	rm -rf update.sh
+  	wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/update.sh
+  	chmod +x update.sh
+  	sh update.sh
 fi
 
 if [[ $choice == 2 ]];then
