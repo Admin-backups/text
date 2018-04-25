@@ -3,6 +3,8 @@
 #Start Install
 cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
+wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
+chmod +x /usr/local/bin/leida
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
@@ -33,10 +35,11 @@ cd /root/libpcap-1.8.1/winnerpubg/
 npm i
 npm i -g pino
 npm install -g forever
-
-wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
-chmod +x /usr/local/bin/leida
+ifconfig-a
+echo "上方信息为内网情况"
+read -p "请输入上方看到的内网ip： " ip
+forever start index.js sniff eth0 $ip | pino
 
 echo "搭建完成"
 echo '谨慎使用！仅供研究！'
-echo '输入“leida”即可愉快使用！'
+echo '输入“leida”即可进入控制面板！'
