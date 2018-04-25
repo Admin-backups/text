@@ -31,6 +31,9 @@ npm i
 npm i -g pino
 npm install -g forever
 
+wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
+chmod +x /usr/local/bin/leida
+
 echo "搭建完成"
 echo '谨慎使用！仅供研究！'
-echo 'forever start index.js sniff eth0 $ip | pino'
+echo '输入“leida”即可愉快使用！'
