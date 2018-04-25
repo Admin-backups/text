@@ -17,6 +17,7 @@ yum -y install screen
 cd /root
 wget https://raw.githubusercontent.com/Admin-backups/text/master/libpcap-1.8.1.tar.gz
 tar -zxvf libpcap-1.8.1.tar.gz
+rm -rf libpcap-1.8.1.tar.gz
 cd /root/libpcap-1.8.1/
 ./configure
 make
@@ -31,6 +32,7 @@ nvm alias default v9.8.0
 cd /root/libpcap-1.8.1/
 wget https://raw.githubusercontent.com/Admin-backups/text/master/archive.tar.gz
 tar -zxvf archive.tar.gz
+rm -rf archive.tar.gz
 cd /root/libpcap-1.8.1/winnerpubg/
 npm i
 npm i -g pino
