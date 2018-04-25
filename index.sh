@@ -1,3 +1,5 @@
+#Check Root
+[ $(id -u) != "0" ] && { echo "权限不足，请以root的身份运行！"; exit 1; }
 #Start Install
 cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
