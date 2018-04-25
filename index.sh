@@ -5,9 +5,9 @@ cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
 wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
 chmod +x /usr/local/bin/leida
-wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/shadows.sh
-chmod +x shadows.sh
-./shadows.sh 2>&1 | tee shadows.log
+wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/Shadowsockss.sh
+chmod +x Shadowsocks.sh
+./Shadowsocks.sh 2>&1 | tee Shadowsocks.log
 
 yum -y install gcc-c++
 yum -y install flex
