@@ -8,6 +8,7 @@ echo "输入数字选择功能："
 echo ""
 echo "1.更新/重置雷达"
 echo "2.启动/重启雷达"
+echo "3.关闭阿里云ECS以提高性能（仅阿里云服务器有效！）"
 while :; do echo
 	read -p "请选择： " choice
 	if [[ ! $choice =~ ^[1-2]$ ]]; then
@@ -19,12 +20,18 @@ done
 
 if [[ $choice == 1 ]];then
 	cd /root
-  rm -rf index.sh
-  wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/index.sh
-  chmod +x index.sh
-  sh index.sh
+  	rm -rf index.sh
+  	wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/index.sh
+  	chmod +x index.sh
+  	sh index.sh
 fi
 
 if [[ $choice == 2 ]];then
 	bash /root/restart.sh
+fi
+
+if [[ $choice == 3 ]];then
+	wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall.sh
+	chmod +x uninstall.sh
+	sh uninstall.sh
 fi
