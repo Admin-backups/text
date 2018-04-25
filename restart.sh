@@ -1,3 +1,5 @@
+cd /root
+source ~/.bash_profile
 cd /root/libpcap-1.8.1/winnerpubg/
 ifconfig -a
 echo "上方信息为内网情况"
