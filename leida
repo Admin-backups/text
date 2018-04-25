@@ -1,0 +1,30 @@
+#Check Root
+[ $(id -u) != "0" ] && { echo "权限不足，请以root的身份运行！"; exit 1; }
+
+echo "欢迎使用雷达控制面板！"
+echo ""
+echo ""
+echo "输入数字选择功能："
+echo ""
+echo "1.更新/重置雷达"
+echo "2.启动/重启雷达"
+while :; do echo
+	read -p "请选择： " choice
+	if [[ ! $choice =~ ^[1-2]$ ]]; then
+		echo "输入错误! 请输入正确的数字!"
+	else
+		break	
+	fi
+done
+
+if [[ $choice == 1 ]];then
+	cd /root
+  rm -rf index.sh
+  wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/index.sh
+  chmod +x index.sh
+  sh index.sh
+fi
+
+if [[ $choice == 2 ]];then
+	bash /root/restart.sh
+fi
