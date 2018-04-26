@@ -44,4 +44,4 @@ read -p "请输入上方看到的内网ip： " ip
 forever start index.js sniff eth0 $ip | pino
 
 cd /root
-bash h
+bash p
