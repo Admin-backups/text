@@ -30,7 +30,6 @@ fi
 
 if [[ $choice == 3 ]];then
 	cd /root
-	wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall.sh
 	chmod +x uninstall.sh
 	sh uninstall.sh
 fi
