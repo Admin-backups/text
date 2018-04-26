@@ -3,6 +3,7 @@
 #Start Install
 cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/p
+wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall.sh
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
 wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
 chmod +x /usr/local/bin/leida
