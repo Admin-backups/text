@@ -19,11 +19,9 @@ while :; do echo
 done
 
 if [[ $choice == 1 ]];then
-	cd /root
-  	rm -rf update.sh
-  	wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/update.sh
-  	chmod +x update.sh
-  	sh update.sh
+	echo ' '
+	echo '请联系安装人员！'
+	echo ' '
 fi
 
 if [[ $choice == 2 ]];then
