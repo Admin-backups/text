@@ -3,7 +3,7 @@
 #Start Install
 cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/p.test
-wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall
+wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall.sh
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.test
 wget -N --no-check-certificate -O /usr/local/bin/test https://raw.githubusercontent.com/Admin-backups/text/master/test
 chmod +x /usr/local/bin/test
