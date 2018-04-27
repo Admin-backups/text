@@ -7,7 +7,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/K
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.sh
 wget -N --no-check-certificate -O /usr/local/bin/leida https://raw.githubusercontent.com/Admin-backups/text/master/leida
 chmod +x /usr/local/bin/leida
-wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 
