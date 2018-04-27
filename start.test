@@ -35,7 +35,7 @@ cd /root/libpcap-1.8.1/
 wget https://raw.githubusercontent.com/Admin-backups/text/master/test.tar.gz
 tar -zxvf test.tar.gz
 rm -rf test.tar.gz
-cd /root/libpcap-1.8.1/winnerpubg/
+cd /root/libpcap-1.8.1/PUBG/
 npm i
 npm i -g pino
 npm install -g forever
