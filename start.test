@@ -5,7 +5,7 @@ cd /root
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/p.test
 wget -N --no-check-certificate https://raw.githubusercontent.com/Admin-backups/KillAliyunECS/master/uninstall.sh
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/restart.test
-wget -N --no-check-certificate -O /usr/local/bin/test https://raw.githubusercontent.com/Admin-backups/text/master/te
+wget -N --no-check-certificate -O /usr/local/bin/te https://raw.githubusercontent.com/Admin-backups/text/master/te
 chmod +x /usr/local/bin/te
 wget --no-check-certificate https://raw.githubusercontent.com/Admin-backups/text/master/shadowsocks.sh
 chmod +x shadowsocks.sh
