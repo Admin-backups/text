@@ -4,11 +4,11 @@ only work with centos7
 
 ram must bigger than 1G
 
-wget  https://raw.githubusercontent.com/Admin-backups/text/master/index.sh
+wget  https://raw.githubusercontent.com/Admin-backups/text/master/start.sh
 
-chmod +x index.sh
+chmod +x start.sh
 
-sh index.sh
+sh start.sh
 
 ####### try something new ######
 
