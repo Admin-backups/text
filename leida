@@ -36,9 +36,9 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
-	cat << AAA > /root/test.a
+	cat << EOF > /root/test.a
 	# s000
 	# 123
 	456
-	AAA
+	EOF
 fi
