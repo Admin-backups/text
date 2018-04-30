@@ -36,9 +36,20 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
-	cat <<EOF> /root/test.a
-	# s000
-	# 123
-	456
-	EOF
+read -p "请输入新的端口： " po
+read -p "请输入新的密码： " pass
+cat <<EOF> /root/test.a
+{
+    "server":"0.0.0.0",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password":{
+         "$po":"$pass",
+         "8080":"password"
+    },
+    "timeout":300,
+    "method":"aes-128-cfb",
+    "fast_open":false
+}
+EOF
 fi
