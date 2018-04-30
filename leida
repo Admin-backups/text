@@ -36,9 +36,11 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
+echo "推荐端口范围：1000~60000，密码不用那么复杂！一般数字加英文即可"
+echo "默认加密aes-128-cfb不用改，也改不了！"
 read -p "请输入新的端口： " po
 read -p "请输入新的密码： " pass
-cat <<EOF> /root/test.a
+cat <<EOF> /etc/shadowsocks.json
 {
     "server":"0.0.0.0",
     "local_address":"127.0.0.1",
@@ -52,4 +54,5 @@ cat <<EOF> /root/test.a
     "fast_open":false
 }
 EOF
+/etc/init.d/shadowsocks restart
 fi
