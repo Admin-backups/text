@@ -9,9 +9,10 @@ echo ""
 echo "1.更新/重置雷达"
 echo "2.启动/重启雷达"
 echo "3.关闭阿里云ECS以提高性能（仅阿里云服务器有效！）"
+echo "4.更改代理设置（端口&密码）"
 while :; do echo
 	read -p "请选择： " choice
-	if [[ ! $choice =~ ^[1-3]$ ]]; then
+	if [[ ! $choice =~ ^[1-4]$ ]]; then
 		echo "输入错误! 请输入正确的数字!"
 	else
 		break	
@@ -32,4 +33,11 @@ if [[ $choice == 3 ]];then
 	cd /root
 	chmod +x uninstall.sh
 	sh uninstall.sh
+fi
+
+if [[ $choice == 4 ]];then
+	cat << EOF > test.sh
+> #!/bin/bash             #“shell脚本”
+> #you Shell script writes here.
+> EOF
 fi
