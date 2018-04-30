@@ -36,8 +36,10 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
-	cat << EOF > /root/test.a
-> #!/bin/bash            
-> #you Shell script writes here.
-> EOF
+	cat << EOF > /etc/sysconfig/iptables
+	# sample configuration for iptables service
+	# you can edit this manually or use system-config-firewall
+	456
+	COMMIT
+	EOF
 fi
