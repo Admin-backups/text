@@ -37,9 +37,8 @@ fi
 
 if [[ $choice == 4 ]];then
 	cat << AAA > /root/test.a
-	# sample configuration for iptables service
-	# you can edit this manually or use system-config-firewall
+	# s000
+	# 123
 	456
-	COMMIT
 	AAA
 fi
