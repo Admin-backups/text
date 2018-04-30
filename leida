@@ -36,10 +36,10 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
-	cat << EOF > /root/test.a
+	cat << AAA > /root/test.a
 	# sample configuration for iptables service
 	# you can edit this manually or use system-config-firewall
 	456
 	COMMIT
-	EOF
+	AAA
 fi
