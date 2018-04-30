@@ -36,8 +36,7 @@ if [[ $choice == 3 ]];then
 fi
 
 if [[ $choice == 4 ]];then
-	cat << EOF > test.sh
-> #!/bin/bash             #“shell脚本”
-> #you Shell script writes here.
-> EOF
+	cat << EOF > a
+12458
+EOF
 fi
