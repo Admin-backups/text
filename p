@@ -1,6 +1,5 @@
 cd /root
 rm -rf index.sh
-rm -rf update.sh
 
 
 echo "搭建完成"
